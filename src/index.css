@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer components {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .input-border {
+    @apply w-full h-8 p-2 border rounded  mt-2 mb-3 outline-none;
+  }
+  .btn-blue {
+    @apply w-full h-10 p-2 rounded  text-white;
+  }
+  .line {
+    @apply flex gap-2;
+  }
+  .btn-sm {
+    @apply w-3 h-3 self-center;
+  }
+  .btn-md {
+    @apply w-4 h-4 self-center;
+  }
+  .day {
+    @apply shadow-lg rounded-sm p-2;
+  }
+  .time {
+    @apply rounded-[4px] p-2 text-center;
+  }
+  .card {
+    @apply shadow-lg rounded-lg flex gap-2;
+  }
+  .desktop-h1 {
+    @apply text-5xl font-medium leading-[48px] text-black;
+  }
+  .desktop-h2 {
+    @apply text-3xl font-medium leading-[40px] text-black;
+  }
+  .desktop-h3 {
+    @apply text-[30px] font-medium leading-9 text-black;
+  }
+  .desktop-h4 {
+    @apply text-2xl font-medium text-black;
+  }
+  .desktop-h5 {
+    @apply text-xl font-medium text-black;
+  }
+  .mobile-h1 {
+    @apply text-4xl font-medium text-black;
+  }
+  .mobile-h2 {
+    @apply text-3xl font-medium text-black;
+  }
+  .mobile-h3 {
+    @apply text-2xl font-medium text-black;
+  }
+  .mobile-h4 {
+    @apply text-xl font-medium text-black;
+  }
+  .normal-xxxs {
+    @apply text-[8px] leading-[12px];
+  }
+  .normal-xxs {
+    @apply text-[10px] leading-[14px];
+  }
+  .normal-xs {
+    @apply text-[12px] leading-[16px];
+  }
+  .normal-sm {
+    @apply text-sm;
+  }
+  .normal-bs {
+    @apply text-base;
+  }
+  .normal-lg {
+    @apply text-lg;
+  }
+  .semibold-xxxs {
+    @apply font-semibold text-[8px] leading-[12px];
+  }
+  .semibold-xxs {
+    @apply font-semibold text-[10px] leading-[14px];
+  }
+  .semibold-xs {
+    @apply font-semibold text-[12px] leading-[16px];
+  }
+  .semibold-sm {
+    @apply font-semibold text-sm;
+  }
+  .semibold-bs {
+    @apply font-semibold text-base;
+  }
+  .semibold-lg {
+    @apply font-semibold text-lg;
+  }
+  .capitaliz-xxxs {
+    @apply font-semibold text-transform: capitalize text-[8px] leading-[12px];
+  }
+  .capitaliz-xxs {
+    @apply font-semibold text-transform: capitalize text-[10px] leading-[14px];
+  }
+  .capitaliz-xs {
+    @apply font-semibold text-transform: capitalize text-[12px] leading-[16px];
+  }
+  .capitaliz-sm {
+    @apply font-semibold text-transform: capitalize text-sm;
+  }
+  .capitaliz-bs {
+    @apply font-semibold text-transform: capitalize text-base;
+  }
+  .capitaliz-lg {
+    @apply font-semibold text-transform: capitalize text-lg;
+  }
+  .hamburger-menu {
+    @apply flex flex-col justify-between cursor-pointer w-7 h-6;
+  }
+  .bar {
+    @apply w-full h-[2px] bg-black transition-transform duration-300;
+  }
+  .change .bar:nth-child(1) {
+    transform: translateY(11px) rotate(-45deg);
+  }
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .change .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(45deg);
+  }
+  .line {
+    @apply w-full h-[2px] bg-white;
+  }
+}
